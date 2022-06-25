@@ -18,7 +18,7 @@
     position: absolute;
     bottom: 0;
     width: 80px;
-    animation: pipe-animation 1.5s infinite linear;
+    animation: pipe-animation 3s infinite linear;
 }
 
 .super-mario{
@@ -34,7 +34,39 @@
 .cloud-game{
     position: absolute;
     width: 550px;
-    animation: clouds-animation 20s infinite linear;
+    animation: clouds-animation 25s infinite linear;
+}
+
+.bullet-game {
+    position: absolute;
+    bottom: 400px;
+    width: 70px;
+    right: -70px;
+    animation: bullet-animation 7s infinite linear;
+    animation-delay: 5s;
+    
+}
+
+.goomba-game {
+    position: absolute;
+    bottom: 0;
+    width: 60px;
+    right: -60px;
+    animation: goomba-animation 6s infinite linear;
+    animation-delay: 2s;
+    
+}
+
+.semaphore-game {
+    position: absolute;
+    top: 100px;
+    left: 200px;
+    width: 180px;
+    height: 150px;
+    animation: semaphore-animation 5.5s infinite linear;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+
 }
 
 @keyframes pipe-animation {
@@ -73,6 +105,34 @@
     }
     100%{
         bottom: 0%
+    }
+
+}
+
+@keyframes bullet-animation {
+    from {
+        right: -70px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes goomba-animation {
+    from {
+        right: -60px;
+    }
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes semaphore-animation {
+    from {
+        top: 100px;
+    }
+    to{
+        top: -100%;
     }
 
 }
