@@ -18,7 +18,9 @@
     position: absolute;
     bottom: 0;
     width: 80px;
+    right: -80px;
     animation: pipe-animation 3s infinite linear;
+    animation-delay: 2s;
 }
 
 .super-mario{
@@ -52,9 +54,8 @@
     bottom: 0;
     width: 60px;
     right: -60px;
-    animation: goomba-animation 6s infinite linear;
-    animation-delay: 2s;
-    
+    animation: goomba-animation 3s infinite linear;
+    animation-delay: 3.5s;    
 }
 
 .semaphore-game {
@@ -63,10 +64,9 @@
     left: 200px;
     width: 180px;
     height: 150px;
-    animation: semaphore-animation 5.5s infinite linear;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-
+    animation: semaphore-animation 5.5s linear;
+    animation-delay: 2s; 
+    animation-fill-mode: forwards;   
 }
 
 @keyframes pipe-animation {
@@ -134,5 +134,4 @@
     to{
         top: -100%;
     }
-
 }
